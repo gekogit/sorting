@@ -1,5 +1,5 @@
 # Sorting
-Comparison diferent types of sorting:
+Comparison different types of sorting:
 - heap
 - merage
 - quick
