@@ -14,10 +14,8 @@ Results of the comparison are presented in the table. Example is shown below
      Counting sorting    |   73.9   |   83.7   |   87.2   |  103.7   |  103.8   
     Quick list sorting   |   10.4   |   19.5   |   30.8   |   41.9   |   58.6   
     
-Moreover reasults are presented in the form of a graph.
- (https://i.ibb.co/mGnKZt8/Figure-1.png)
-Each tests results are also save to file
-
+Moreover reasults are presented in the form of a graph. (https://i.ibb.co/mGnKZt8/Figure-1.png)
+Each tests results are also save to file.
 
 Project shows implementation of algorithms, useage of functions, lists, modules, decorators, exceptions, file operation, unittests, presenting the results. 
 Each tests results are save to file
