@@ -1,5 +1,5 @@
 This program compares calculation time for 5 sorting algorithm:
-        - merage sorting 
+        - merage sorting
         - heap sorting
         - bubble sorting
         - counting sorting
