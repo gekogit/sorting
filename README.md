@@ -1,11 +1,11 @@
-This program compares calculation time for 5 sorting algorithm:
-        - merage sorting\n
-        - heap sorting
-        - bubble sorting
-        - counting sorting
-        - quick list sorting
+This program compares calculation time for 5 sorting algorithms:
+- merage sorting
+- heap sorting
+- bubble sorting
+- counting sorting
+- quick list sorting.
     
-Results of the comparison are presented in the table. Example is shown below
+Results of the comparison are presented in the table. Example is shown below:
 
        Length list       |    10    |    20    |    30    |    40    |    50    
       Merage sorting     |   16.9   |   29.6   |   47.0   |   80.2   |   81.8   
@@ -18,4 +18,4 @@ Moreover reasults are presented in the form of a graph. (https://i.ibb.co/mGnKZt
 Each tests results are also save to file.
 
 Project shows implementation of algorithms, useage of functions, lists, modules, decorators, exceptions, file operation, unittests, presenting the results. 
-Each tests results are save to file
+
