@@ -1,7 +1,7 @@
 import time
 import bubble_sort
 import counting_sort
-import merage_sort
+import merge_sort
 import heap_sort
 import quick_sort
 import input_data
@@ -24,9 +24,9 @@ def timepassed(func):
     return inside_f
 
 @timepassed
-def speed_test_merage(len_list):
+def speed_test_merge(len_list):
     for x in range(number_of_lists):
-        merage_sort.merge_sort(input_data.auto_random(len_list))
+        merge_sort.merge_sort(input_data.auto_random(len_list))
 
 @timepassed
 def speed_test_heap(len_list):
@@ -62,7 +62,7 @@ def row_result(name, input):
 
 def make_raport(legend, results, lists_tests_len, number_of_lists):
     raport = f"""This program compared calculation time for 5 sorting algorithm:
-    - merage sorting 
+    - merge sorting 
     - heap sorting
     - bubble sorting
     - counting sorting
@@ -86,22 +86,22 @@ For each sequence length, the test was performed {number_of_lists} times. The re
 
 def main():
 
-    lists_tests_len = [10,20,30,40,50,100,200,500]
-    results_merage = []
+    lists_tests_len = [10,20,30,40,50]#,100,200,500]
+    results_merge = []
     results_heap = []
     results_bubble = []
     results_counting = []
     results_quick = []
 
     for tests_len in lists_tests_len:
-        results_merage.append(speed_test_merage(tests_len)/number_of_lists)
+        results_merge.append(speed_test_merge(tests_len)/number_of_lists)
         results_heap.append(speed_test_heap(tests_len)/number_of_lists)
         results_bubble.append(speed_test_bubble(tests_len)/number_of_lists)
         results_counting.append(speed_test_counting(tests_len)/number_of_lists)
         results_quick.append(speed_test_quick(tests_len) / number_of_lists)
 
-    results = [results_merage, results_heap, results_bubble, results_counting, results_quick]
-    legend = ["Merage sorting", "Heap sorting", "Bubble sorting", "Counting sorting", "Quick list sorting"]
+    results = [results_merge, results_heap, results_bubble, results_counting, results_quick]
+    legend = ["Merge sorting", "Heap sorting", "Bubble sorting", "Counting sorting", "Quick list sorting"]
     content = make_raport(legend, results, lists_tests_len, number_of_lists)
 
     #Print report on console
